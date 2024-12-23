@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme币监控系统</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.0/echarts.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Meme币监控系统</h1>
+            <div class="time" id="currentTime">2024/12/22 23:27:51</div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="content">
+            <!-- 实时数据展示 -->
+            <div class="row">
+                <div class="data-box">
+                    <p>最新价格</p >
+                    <h2 id="latestPrice">0.00012345</h2>
+                </div>
+                <div class="data-box">
+                    <p>24小时交易量</p >
+                    <h2 id="tradeVolume">10,567,890</h2>
+                </div>
+                <div class="data-box">
+                    <p>市场情绪</p >
+                    <h2 id="marketSentiment">乐观</h2>
+                </div>
+            </div>
+
+            <!-- 图表展示 -->
+            <div class="row">
+                <div class="chart-container">
+                    <div class="chart-title">价格走势</div>
+                    <div id="priceChart" class="chart"></div>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-title">交易量分布</div>
+                    <div id="volumeChart" class="chart"></div>
+                </div>
+            </div>
+
+            <!-- 告警信息 -->
+            <div class="alert-container">
+                <h3>告警信息</h3>
+                <ul id="alertList">
+                    <li>价格波动超出10%，当前价格：0.00013456</li>
+                    <li>交易量骤增，24小时交易量达到12,345,678</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
